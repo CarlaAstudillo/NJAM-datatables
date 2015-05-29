@@ -6,7 +6,7 @@ jqueryNoConflict(document).ready(function(){
 
 
 
-    
+    // Change google spreadsheet link here
 
     initializeTabletopObject('https://docs.google.com/spreadsheets/d/1PZQ6NIvQgXtL3Bq0-fHDAh6mGlEV3fvZBsh2pdaJB9s/pubhtml');
     
