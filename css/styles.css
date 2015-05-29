@@ -125,15 +125,13 @@ td.left.sorting_1 {
 		}
 		
 		/*
-		Label the data
+		Label the data for mobile use
 		*/
-		td:nth-of-type(1):before { content: "County"; font-weight: bold; text-align:left; }
-		td:nth-of-type(2):before { content: "District"; font-weight: bold; text-align:left; }
-		td:nth-of-type(3):before { content: "School"; font-weight: bold; text-align:left; }
-		td:nth-of-type(4):before { content: "Grade"; font-weight: bold; text-align:left; }
-		td:nth-of-type(5):before { content: "Failed"; font-weight: bold; text-align:left; }
-		td:nth-of-type(6):before { content: "Passed"; font-weight: bold; text-align:left;}
-		td:nth-of-type(7):before { content: "Advanced Passed"; font-weight: bold; text-align:left;}
+		td:nth-of-type(1):before { content: "Item Received"; font-weight: bold; text-align:left; }
+		td:nth-of-type(2):before { content: "Description"; font-weight: bold; text-align:left; }
+		td:nth-of-type(3):before { content: "Sender of Item/Other Info"; font-weight: bold; text-align:left; }
+		td:nth-of-type(4):before { content: "Date Received"; font-weight: bold; text-align:left; }
+		
 	}
 	
 	/* Smartphones (portrait and landscape) ----------- */
