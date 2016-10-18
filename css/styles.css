@@ -1,36 +1,82 @@
-body { font-family: 'Open Sans', sans-serif; padding-right: 0px; padding-left: 0px; height: auto; }
+body { font-family: 'Open Sans', sans-serif; padding-right: 0px; padding-left: 0px; height: auto; color: #444; }
 table { font-family: 'Open Sans', sans-serif; font-size: 12px; float: left; }
 .table th,
-.table td { text-align: left; }
+.table td { text-align: left;
+ }
+
+ h2 {
+	font-size: 26px;
+	color: #508AA8;
+		}
+
+.table td { 
+border:none; 
+
+text-transform: capitalize;
+}
+
+.table th { 
+border-bottom: 3px dashed #508AA8;
+}
 table.display td {
 	padding: 10px 10px;
-	background-color: white;
+	background-color: none;
 }
 tr.odd {
 	background-color: white;
 
 }
-a {color: #5776D4;
+a {color: #508AA8;
 	text-decoration: underline;
 
 }
-.table th { font-size: 12px; background-color: #FAFAFA; }
+
+.download, .credit {
+	float: right;
+}
+
+.source {
+			font-size: 13px;
+			font-weight: bold;
+			float: left;
+			margin-bottom: 5px;
+		}
+
+
+.search_row {
+	font-weight: bold;
+	font-size: 12px;
+	float: left;
+}
+.table th { 
+	font-size: 13px; background-color: none;
+	color: #508AA8;
+	font-weight: bold; 
+
+
+}
 .table thead th { vertical-align: middle; cursor: pointer; }
 
 label, input, button, select, textarea { line-height: 30px }
 input, textarea, select, .uneditable-input { height: 25px; line-height: 25px; }
-select { width: 75px }
-.dataTables_length { padding-left: 10px }
-.dataTables_filter { padding-right: 10px }
-td.left.sorting_1 { 
 
-	background-color: rgba(87, 118, 212, 0.2);
+select { width: 75px }
+
+.form-inline input {
+	margin-left: 5px;
+}
+.dataTables_length { padding-left: 10px }
+td.left.sorting_1, .table-hover tbody tr:hover td { 
+
+	background-color: rgba(80, 138, 212, 0.2);
 	
    filter: alpha(opacity=20);
    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
    -moz-opacity: 0.20;
 
 }
+
+ 
 
 .table tbody>tr:nth-child(odd)>th>td.sorting_1 { background-color: rgba(87, 118, 212, 0.1); }
 
@@ -39,9 +85,9 @@ td.left.sorting_1 {
 	This query will take effect for any screen smaller than 760px
 	and also iPads specifically.
 	*/
-	@media 
-	only screen and (max-width: 480px),
-	(min-device-width: 480px) and (max-device-width: 1024px)  {
+	@media only screen and (max-width: 450px) {
+    /* For mobile phones: */
+   
 	
 		/* Force table to not be like tables anymore */
 		table, thead, tbody, th, td, tr { 
@@ -53,11 +99,29 @@ td.left.sorting_1 {
 			line-height: 1.2;
 		}
 
+		.search_row {
+	
+	float: none;
+}
+
+		.source {
+			font-size: 12px;
+			font-weight: bold;
+			margin-top: 2px;
+		}
+
 		p {
 			font-size: 13px;
+			margin: 0;
 		}
 		h2 {
 			font-size: 18px;
+			margin: 0;
+		}
+
+		.download {
+			font-size: 13px;
+			float: left;
 		}
 
 		body { padding-right: 0px !important; padding-left: 0px !important; margin: 0; }
@@ -67,6 +131,10 @@ td.left.sorting_1 {
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
+		}
+
+		.pagination ul>li>a, .pagination ul>li>span {
+			padding: 4px 8px;
 		}
 
 		.pagination {
@@ -82,15 +150,10 @@ td.left.sorting_1 {
 		input, textarea, .uneditable-input {
 			width: 70%;
 			display: block;
-			margin-left: 5px;
+			margin-left: 25px;
 		}
 
-		.dataTables_info {
-			width: 100%;
-			float: left;
-			padding: 10px 0;
-		}
-
+		
 
 		
 		tr { border: 1px solid #ccc; }
@@ -127,10 +190,11 @@ td.left.sorting_1 {
 		/*
 		Label the data for mobile use
 		*/
-		td:nth-of-type(1):before { content: "Item Received"; font-weight: bold; text-align:left; }
-		td:nth-of-type(2):before { content: "Description"; font-weight: bold; text-align:left; }
-		td:nth-of-type(3):before { content: "Sender of Item/Other Info"; font-weight: bold; text-align:left; }
-		td:nth-of-type(4):before { content: "Date Received"; font-weight: bold; text-align:left; }
+		td:nth-of-type(1):before { content: "County"; font-weight: bold; text-align:left; }
+		td:nth-of-type(2):before { content: "District"; font-weight: bold; text-align:left; }
+		td:nth-of-type(3):before { content: "2010-2011"; font-weight: bold; text-align:left; }
+		td:nth-of-type(4):before { content: "2015-2016"; font-weight: bold; text-align:left; }
+		td:nth-of-type(5):before { content: "Difference"; font-weight: bold; text-align:left; }
 		
 	}
 	

@@ -170,7 +170,7 @@ var pym = (function() {
 
             // Get the child's height.
             var height = document.getElementsByTagName('body')[0].offsetHeight.toString();
-            console.log("This is the iframe height = " + height)
+         
 
             // Send the height to the parent.
             window.top.postMessage('responsivechild ' + this.id + ' '+ height, '*');
