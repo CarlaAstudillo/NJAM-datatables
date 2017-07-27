@@ -6,7 +6,7 @@ table { font-family: 'Open Sans', sans-serif; font-size: 12px; float: left; }
 
  h2 {
 	font-size: 26px;
-	color: #508AA8;
+	color: #950952;
 		}
 
 .table td { 
@@ -16,7 +16,7 @@ text-transform: capitalize;
 }
 
 .table th { 
-border-bottom: 3px dashed #508AA8;
+border-bottom: 3px dashed #950952;
 }
 table.display td {
 	padding: 10px 10px;
@@ -26,7 +26,7 @@ tr.odd {
 	background-color: white;
 
 }
-a {color: #508AA8;
+a {color: #950952;
 	text-decoration: underline;
 
 }
@@ -50,7 +50,7 @@ a {color: #508AA8;
 }
 .table th { 
 	font-size: 13px; background-color: none;
-	color: #508AA8;
+	color: #950952;
 	font-weight: bold; 
 
 
@@ -68,7 +68,7 @@ select { width: 75px }
 .dataTables_length { padding-left: 10px }
 td.left.sorting_1, .table-hover tbody tr:hover td { 
 
-	background-color: rgba(80, 138, 212, 0.2);
+	background-color: rgba(149, 9, 82, 0.2);
 	
    filter: alpha(opacity=20);
    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
@@ -78,7 +78,7 @@ td.left.sorting_1, .table-hover tbody tr:hover td {
 
  
 
-.table tbody>tr:nth-child(odd)>th>td.sorting_1 { background-color: rgba(87, 118, 212, 0.1); }
+.table tbody>tr:nth-child(odd)>th>td.sorting_1 { background-color: rgba(149, 9, 82, 0.1); }
 
 /* 
 	Max width before this PARTICULAR table gets nasty
@@ -190,11 +190,11 @@ td.left.sorting_1, .table-hover tbody tr:hover td {
 		/*
 		Label the data for mobile use
 		*/
-		td:nth-of-type(1):before { content: "County"; font-weight: bold; text-align:left; }
-		td:nth-of-type(2):before { content: "District"; font-weight: bold; text-align:left; }
-		td:nth-of-type(3):before { content: "2010-2011"; font-weight: bold; text-align:left; }
-		td:nth-of-type(4):before { content: "2015-2016"; font-weight: bold; text-align:left; }
-		td:nth-of-type(5):before { content: "Difference"; font-weight: bold; text-align:left; }
+		td:nth-of-type(1):before { content: "Town"; font-weight: bold; text-align:left; }
+		td:nth-of-type(2):before { content: "County"; font-weight: bold; text-align:left; }
+		td:nth-of-type(3):before { content: "Offense"; font-weight: bold; text-align:left; }
+		td:nth-of-type(4):before { content: "Population (2014)"; font-weight: bold; text-align:left; }
+		td:nth-of-type(5):before { content: "DV Rate"; font-weight: bold; text-align:left; }
 		
 	}
 	

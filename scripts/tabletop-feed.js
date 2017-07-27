@@ -1,5 +1,7 @@
 var jqueryNoConflict = jQuery;
 
+var pymChild = null;
+
 // begin main function
 jqueryNoConflict(document).ready(function(){
 
@@ -8,8 +10,8 @@ jqueryNoConflict(document).ready(function(){
 
     // Change google spreadsheet link here
 
-    initializeTabletopObject('https://docs.google.com/spreadsheets/d/1qB6o2ULRvkkBInv88rKGSHCe0Dg8FtUAU_n1WtDqj-U/pubhtml');
-    
+    initializeTabletopObject('https://docs.google.com/spreadsheets/d/1n2PmuLOqi5drt7SGfo8hM11CYECt0ymuXey0jbGPfO0/pubhtml');
+
 
 });
 
@@ -28,6 +30,8 @@ function initializeTabletopObject(dataSpreadsheet){
         simpleSheet: true,
         debug: false
     });
+
+
 }
 
 // create table headers
@@ -43,11 +47,11 @@ function createTableColumns(){
 
 
     var tableColumns =   [
-        {'mDataProp': 'countyname', 'sTitle': 'County', 'sClass': 'left'},
-        {'mDataProp': 'districtname', 'sTitle': 'District', 'sClass': 'left'},
-        {'mDataProp': 'total', 'sTitle': '2010-2011', 'sClass': 'left'},
-        {'mDataProp': 'total_6', 'sTitle': '2015-2016', 'sClass': 'left'},
-        {'mDataProp': 'difference', 'sTitle': 'Difference', 'sClass': 'left'}
+        {'mDataProp': 'town', 'sTitle': 'Town', 'sClass': 'left'},
+        {'mDataProp': 'county', 'sTitle': 'County', 'sClass': 'left'},
+        {'mDataProp': 'offense', 'sTitle': 'Offense', 'sClass': 'left'},
+        {'mDataProp': 'adjustedpop', 'sTitle': 'Population (2014)*', 'sClass': 'left'},
+        {'mDataProp': 'rate', 'sTitle': 'Rate per 1,000', 'sClass': 'left'}
     ];
     return tableColumns;
 
@@ -64,7 +68,7 @@ function writeTableWith(dataSource){
     var oTable = jqueryNoConflict('#data-table-container').dataTable({
         'sPaginationType': 'bootstrap',
         'iDisplayLength': displaylength(width),
-        'aaSorting': [[ 4, 'asc' ]],
+        'aaSorting': [[ 4, 'desc' ]],
         "deferRender": true,
         'aaData': dataSource, 
         'aoColumns': createTableColumns(),
@@ -72,9 +76,13 @@ function writeTableWith(dataSource){
             'sLengthMenu': '_MENU_ <br>records per page'
         }
     });
-var pymChild = new pym.Child(); 
+    
+pymChild = new pym.Child(); 
+
+
 
 };
+
 
 
 function displaylength(bodywidth) {
@@ -97,4 +105,3 @@ jQuery.fn.dataTableExt.oSort['string-case-asc']  = function(x,y) {
 jQuery.fn.dataTableExt.oSort['string-case-desc'] = function(x,y) {
     return ((x < y) ?  1 : ((x > y) ? -1 : 0));
 };
-
