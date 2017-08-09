@@ -1,6 +1,6 @@
 # NJAM Data Tables
 
-This is a reusable template for interactive, searchable databases powered through Google Spreadsheets and embedded in our CMS through pym.js. *It should be use for datasets with less than 2,000 rows.* The graphic could be slow in loading if it's a big dataset.
+This is a reusable template for interactive, searchable databases powered through Google Spreadsheets and embedded in our CMS through pym.js. **It should be use for datasets with less than 2,000 rows.** The graphic could be slow in loading if it's a big dataset.
 
 ## Getting Started
 
