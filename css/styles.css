@@ -1,216 +1,269 @@
-body { font-family: 'Open Sans', sans-serif; padding-right: 0px; padding-left: 0px; height: auto; color: #444; }
-table { font-family: 'Open Sans', sans-serif; font-size: 12px; float: left; }
-.table th,
-.table td { text-align: left;
- }
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding-right: 0px;
+	padding-left: 0px;
+	height: auto;
+	color: #444;
+}
 
- h2 {
+table {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	float: left;
+}
+
+.table th,
+.table td {
+	text-align: left;
+}
+
+h2 {
 	font-size: 26px;
 	color: #950952;
-		}
-
-.table td { 
-border:none; 
-
-text-transform: capitalize;
 }
 
-.table th { 
-border-bottom: 3px dashed #950952;
+.table td {
+	border: none;
+	text-transform: capitalize;
 }
+
+.table th {
+	border-bottom: 3px dashed #950952;
+}
+
 table.display td {
 	padding: 10px 10px;
 	background-color: none;
 }
+
 tr.odd {
 	background-color: white;
-
 }
-a {color: #950952;
+
+a {
+	color: #950952;
 	text-decoration: underline;
-
 }
 
-.download, .credit {
+.download,
+.credit {
 	float: right;
 }
 
 .source {
-			font-size: 13px;
-			font-weight: bold;
-			float: left;
-			margin-bottom: 5px;
-		}
-
+	font-size: 13px;
+	font-weight: bold;
+	float: left;
+	margin-bottom: 5px;
+}
 
 .search_row {
 	font-weight: bold;
 	font-size: 12px;
 	float: left;
 }
-.table th { 
-	font-size: 13px; background-color: none;
+
+.table th {
+	font-size: 13px;
+	background-color: none;
 	color: #950952;
-	font-weight: bold; 
-
-
+	font-weight: bold;
 }
-.table thead th { vertical-align: middle; cursor: pointer; }
 
-label, input, button, select, textarea { line-height: 30px }
-input, textarea, select, .uneditable-input { height: 25px; line-height: 25px; }
+.table thead th {
+	vertical-align: middle;
+	cursor: pointer;
+}
 
-select { width: 75px }
+label,
+input,
+button,
+select,
+textarea {
+	line-height: 30px
+}
+
+input,
+textarea,
+select,
+.uneditable-input {
+	height: 25px;
+	line-height: 25px;
+}
+
+select {
+	width: 75px
+}
 
 .form-inline input {
 	margin-left: 5px;
 }
-.dataTables_length { padding-left: 10px }
-td.left.sorting_1, .table-hover tbody tr:hover td { 
 
-	background-color: rgba(149, 9, 82, 0.2);
-	
-   filter: alpha(opacity=20);
-   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
-   -moz-opacity: 0.20;
-
+.dataTables_length {
+	padding-left: 10px
 }
 
- 
+td.left.sorting_1,
+.table-hover tbody tr:hover td {
+	background-color: rgba(149, 9, 82, 0.2);
+	filter: alpha(opacity=20);
+	filter: progid: DXImageTransform.Microsoft.Alpha(opacity=20);
+	-moz-opacity: 0.20;
+}
 
-.table tbody>tr:nth-child(odd)>th>td.sorting_1 { background-color: rgba(149, 9, 82, 0.1); }
+.table tbody>tr:nth-child(odd)>th>td.sorting_1 {
+	background-color: rgba(149, 9, 82, 0.1);
+}
+
 
 /* 
 	Max width before this PARTICULAR table gets nasty
 	This query will take effect for any screen smaller than 760px
 	and also iPads specifically.
 	*/
-	@media only screen and (max-width: 450px) {
-    /* For mobile phones: */
-   
-	
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr { 
-			display: block; 
-		}
 
-		h1 {
-			font-size: 25px;
-			line-height: 1.2;
-		}
-
-		.search_row {
-	
-	float: none;
-}
-
-		.source {
-			font-size: 12px;
-			font-weight: bold;
-			margin-top: 2px;
-		}
-
-		p {
-			font-size: 13px;
-			margin: 0;
-		}
-		h2 {
-			font-size: 18px;
-			margin: 0;
-		}
-
-		.download {
-			font-size: 13px;
-			float: left;
-		}
-
-		body { padding-right: 0px !important; padding-left: 0px !important; margin: 0; }
-		
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr { 
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-
-		.pagination ul>li>a, .pagination ul>li>span {
-			padding: 4px 8px;
-		}
-
-		.pagination {
-			width: 100%;
-			font-size: 11px;
-			margin: 0;
-		}
-
-		.form-search label, .form-inline label, .form-search .btn-group, .form-inline .btn-group {
-			font-size: 13px;
-		}
-
-		input, textarea, .uneditable-input {
-			width: 70%;
-			display: block;
-			margin-left: 25px;
-		}
-
-		
-
-		
-		tr { border: 1px solid #ccc; }
-		
-		td { 
-			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid #eee; 
-			position: relative;
-			padding-top: 20%;
-			text-align: right;
-			height: 70%;  
-		}
-
-		table.display td.center {
-			text-align: right;
-		}
-
-		table.display td {
-			padding: 30px 10px 3px 10px;
-		}
-		
-		td:before { 
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 6px;
-			left: 6px;
-			width: 45%;  
-			padding-right: 10px; 
-			white-space: nowrap;
-		}
-		
-		/*
+@media only screen and (max-width: 450px) {
+	/* For mobile phones: */
+	/* Force table to not be like tables anymore */
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+	h1 {
+		font-size: 25px;
+		line-height: 1.2;
+	}
+	.search_row {
+		float: none;
+	}
+	.source {
+		font-size: 12px;
+		font-weight: bold;
+		margin-top: 2px;
+	}
+	p {
+		font-size: 13px;
+		margin: 0;
+	}
+	h2 {
+		font-size: 18px;
+		margin: 0;
+	}
+	.download {
+		font-size: 13px;
+		float: left;
+	}
+	body {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		margin: 0;
+	}
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	.pagination ul>li>a,
+	.pagination ul>li>span {
+		padding: 4px 8px;
+	}
+	.pagination {
+		width: 100%;
+		font-size: 11px;
+		margin: 0;
+	}
+	.form-search label,
+	.form-inline label,
+	.form-search .btn-group,
+	.form-inline .btn-group {
+		font-size: 13px;
+	}
+	input,
+	textarea,
+	.uneditable-input {
+		width: 70%;
+		display: block;
+		margin-left: 25px;
+	}
+	tr {
+		border: 1px solid #ccc;
+	}
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-top: 20%;
+		text-align: right;
+		height: 70%;
+	}
+	table.display td.center {
+		text-align: right;
+	}
+	table.display td {
+		padding: 30px 10px 3px 10px;
+	}
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	/*
 		Label the data for mobile use
 		*/
-		td:nth-of-type(1):before { content: "Town"; font-weight: bold; text-align:left; }
-		td:nth-of-type(2):before { content: "County"; font-weight: bold; text-align:left; }
-		td:nth-of-type(3):before { content: "Offense"; font-weight: bold; text-align:left; }
-		td:nth-of-type(4):before { content: "Population (2014)"; font-weight: bold; text-align:left; }
-		td:nth-of-type(5):before { content: "DV Rate"; font-weight: bold; text-align:left; }
-		
+	td:nth-of-type(1):before {
+		content: "Town";
+		font-weight: bold;
+		text-align: left;
 	}
-	
-	/* Smartphones (portrait and landscape) ----------- */
-	@media only screen
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
-		body { 
-			padding: 0; 
-			margin: 0; 
-			width: 320px; }
-		}
-	
-	/* iPads (portrait and landscape) ----------- */
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-		body { 
-			width: 495px; 
-		}
+	td:nth-of-type(2):before {
+		content: "County";
+		font-weight: bold;
+		text-align: left;
 	}
+	td:nth-of-type(3):before {
+		content: "Offense";
+		font-weight: bold;
+		text-align: left;
+	}
+	td:nth-of-type(4):before {
+		content: "Population (2014)";
+		font-weight: bold;
+		text-align: left;
+	}
+	td:nth-of-type(5):before {
+		content: "DV Rate";
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	body {
+		padding: 0;
+		margin: 0;
+		width: 320px;
+	}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	body {
+		width: 495px;
+	}
+}

@@ -10,7 +10,7 @@ jqueryNoConflict(document).ready(function(){
 
     // Change google spreadsheet link here
 
-    initializeTabletopObject('https://docs.google.com/spreadsheets/d/1n2PmuLOqi5drt7SGfo8hM11CYECt0ymuXey0jbGPfO0/pubhtml');
+    initializeTabletopObject('https://docs.google.com/spreadsheets/d/18g4CXZHY0FVU2u1GcBzhtNop9im0_D9NlHFX2agebDI/pubhtml');
 
 
 });
@@ -39,18 +39,15 @@ function createTableColumns(){
 
 
 
-    /* swap out the properties of mDataProp & sTitle to reflect
-    the names of columns or keys you want to display.
-    Remember, tabletop.js strips out spaces from column titles, which
-    is what happens with the More Info column header */
-
+    /* swap out the properties of mDataProp to reflect
+    the names of columns in the Google Sheet. Swap out the properties of sTitle for the column title you want displayed. */
 
 
     var tableColumns =   [
-        {'mDataProp': 'town', 'sTitle': 'Town', 'sClass': 'left'},
-        {'mDataProp': 'county', 'sTitle': 'County', 'sClass': 'left'},
-        {'mDataProp': 'offense', 'sTitle': 'Offense', 'sClass': 'left'},
-        {'mDataProp': 'adjustedpop', 'sTitle': 'Population (2014)*', 'sClass': 'left'},
+        {'mDataProp': 'Town', 'sTitle': 'Town', 'sClass': 'left'},
+        {'mDataProp': 'County', 'sTitle': 'County', 'sClass': 'left'},
+        {'mDataProp': 'Offense', 'sTitle': 'Offense', 'sClass': 'left'},
+        {'mDataProp': 'adjusted_pop', 'sTitle': 'Population (2014)*', 'sClass': 'left'},
         {'mDataProp': 'rate', 'sTitle': 'Rate per 1,000', 'sClass': 'left'}
     ];
     return tableColumns;
@@ -60,6 +57,7 @@ function createTableColumns(){
 
 // create the table container and object
 function writeTableWith(dataSource){
+
 
   
 
