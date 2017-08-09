@@ -43,11 +43,16 @@ This is a reusable template for interactive, searchable databases powered throug
 
 ```
 
-##Notes
+## Notes
 
 * Don't worry about comma thousands separator in Google Sheets. If you change the number format in Google Sheets to include comma separators, it should automatically add it and sort it correctly. Same with currency and percentages.
 
 
-##Questions
+## Questions
 
 If you have any questions or comments, contact me at [castudillo@njadvancemedia.com](castudillo@njadvancemedia.com).
+
+## Acknowledgements
+
+* Jonathan Soma's [Tabletop.js](https://github.com/jsoma/tabletop) for connecting Google Sheets with the front-end database.
+* NPR's [pym.js library](http://blog.apps.npr.org/pym.js/) for embedding a mobile iframe in the CMS.
