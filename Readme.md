@@ -8,7 +8,19 @@ This is a reusable template for interactive, searchable databases powered throug
 
 ![Img](https://s3.amazonaws.com/nj-data/njam-datatables/images/njamdatatables1.png)
 
-* Open up the `tabletop-feed.js` file and replace the link in the initializeTabletopObject() function with your newly retrieved Google Sheets link.
+**IGNORE THIS URL!** You used to be able to use it, you can't anymore (you still need to do this step, though).
+
+Now that you've published your sheet, you now need to share it, too.
+
+1. Click the **Share** link in the upper right-hand corner
+2. Click the very pale **Advanced** button
+3. **Change...** access to "On - Anyone with a link"
+4. Make sure **Access: Anyone** says **Can view**, since you don't want strangers editing your data
+5. Click **Save**
+
+Copy the **Link to Share**. Your URL should look something like `https://docs.google.com/spreadsheets/d/1Io6W5XitNvifEXER9ECTsbHhAjXsQLq6VEz7kSPDPiQ/edit?usp=sharing`. It should **not** have a `/d/e` in it.
+
+* Open up the `tabletop-feed.js` file and replace the key between the d/ and the /pubhtml in the initializeTabletopObject() function with the key from the above link.
 
 ![Img](https://s3.amazonaws.com/nj-data/njam-datatables/images/njamdatatables2.png)
 
