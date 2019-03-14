@@ -1,0 +1,212 @@
+body { font-family: 'Fira Sans', sans-serif;
+ padding-right: 0px; 
+ padding-left: 0px; 
+ height: auto; 
+ color: #444;
+ max-width: 700px; }
+
+
+
+ .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+ h2 {
+	font-size: 26px;
+	color: #54198e;
+	line-height: 30px;
+		}
+a {
+	color: #54198e;
+	font-size: 14px;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+p {
+	font-size: 14px;
+}
+
+select {
+	width: auto;
+}
+
+.credit, .source {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+
+
+/*Individual incidents table at the bottom*/
+
+div.download a {
+
+	color: #FFF!important;
+	padding: 10px;
+}
+
+.download {
+	float: right;
+	padding: 5px 10px;
+	background-color: #54198e;
+
+}
+
+.links {
+	float: left;
+}
+
+#incidents_table_wrapper {
+	margin-top: 30px;
+}
+
+
+.source {
+
+	clear:right;
+}
+
+.dataTables_wrapper {
+	margin-top: 20px;
+}
+
+ table#incidents_table, table#incidents_table a, table#incidents_table.dataTable tbody tr{
+		font-size: 14px!important;
+
+	}
+
+.dataTables_info, .dataTables_paginate {
+	font-size: 15px;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+	background-color: #333;
+	top: 5px;
+	height: 22px;
+	width: 22px;
+	line-height: 22px;
+	cursor: pointer;
+}
+
+table .details-control, thead .details-control, tbody .details-control, tfoot .details-control, tr .details-control, td .details-control, th .details-control {
+	width: 10%;
+}
+
+table.dataTable>tbody>tr.child ul {
+	display: inline;
+}
+
+table.dataTable>tbody>tr.child ul li {
+	width: auto;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {
+	padding-left: 10px;
+}
+
+table.dataTable>tbody>tr.child span.dtr-data {
+	float: right;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+	background-color: #333;
+	top: 5px;
+	height: 22px;
+	width: 22px;
+	line-height: 22px;
+	cursor: pointer;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+}
+
+table.dataTable tbody tr {
+	background-color: none;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+table.dataTable tr:hover td, table.dataTable tr:hover td.sorting_1, table.dataTable.display tbody tr:hover>.sorting_1, table.dataTable.order-column.hover tbody tr:hover>.sorting_1, table.dataTable.display tbody tr.hover>.even.sorting_1 {
+	background-color: #F0F0F0!important;
+}
+
+table.dataTable.stripe tbody tr.even, table.dataTable.display tbody tr.even, table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd, table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1, table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+	background-color: #F7F7F7;
+}
+
+.dataTables_filter {
+	clear: right!important;
+
+}
+
+.dataTables_info {
+	padding: 10px;
+	margin: 20px 0;
+	background-color: #54198e;
+	color: #FFF!important;
+}
+
+
+
+
+
+
+
+
+/*Mobile view*/
+
+@media screen and (max-width: 520px) {
+h2 {
+	font-size: 23px;
+	line-height: 1.3;
+}
+
+.links {
+	float: left;
+	margin-top: 10px;
+}
+	
+	.dataTables_filter {
+		margin: 20px 0!important;
+	}
+
+	p, a, .credit, .source {
+	font-size: 14px;
+}
+
+a.download {
+	color: #FFF!important;
+}
+
+.download {
+	float: right;
+	padding: 5px 10px;
+	background-color: #54198e;
+
+}
+
+.source {
+	margin-top: 20px;
+}
+
+	 table#incidents_table, table#incidents_table a, table#incidents_table.dataTable tbody tr{
+		font-size: 14px!important;
+
+	}
+
+	table#top_officers.display.dataTable.no-footer.dtr-inline.collapsed,table#top_officers.display.dataTable.no-footer.dtr-inline.collapsed,table#dept_table.display.dataTable.no-footer.dtr-inline.collapsed,table#officer_table.display.dataTable.no-footer.dtr-inline.collapsed, table#incidents_table.display.dataTable.no-footer.dtr-inline.collapsed {
+    margin: 0;
+    width: 100%;
+}
+
+
+
+table.dataTable>tbody>tr.child span.dtr-title {
+	font-size: 13px!important;
+}
+
+}
